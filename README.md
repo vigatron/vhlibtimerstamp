@@ -1,5 +1,7 @@
 # vhlibtimerstamp
 
+Revision: 0.0.2
+
 Lightweight C++ timer library for high-precision microsecond-level benchmarking. 
 
 Supports **PC (POSIX)**, **ESP32**, and **STM32 (DWT cycle counter)**.
@@ -85,5 +87,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 GitHub Repository  
 [https://github.com/vigatron/vhlibtimerstamp](https://github.com/vigatron/vhlibtimerstamp)
 
-**(C) 2025 V01G04A81**  
-
+**(C) 2025-2026 V01G04A81**  

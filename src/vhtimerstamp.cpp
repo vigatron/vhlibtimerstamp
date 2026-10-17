@@ -2,18 +2,18 @@
  * Library       : vhlibtimerstamp
  * Description   : Lightweight C++ timer library for high-precision
  *                 microsecond-level benchmarking on PC, ESP32, and STM32 (DWT).
- * Revision      : 0.0.1
+ * Revision      : 0.0.2
  * Source        : https://github.com/vigatron/vhlibtimerstamp
  * Disclaimer    : Provided "AS IS", without warranty.
  * License       : MIT
  * File          : src/vhtimerstamp.cpp
  * Content size  : 2696
- * Date / Time   : 17-10-2026 11:22:41
+ * Date / Time   : 17-10-2026 16:02:02
  * MD5           : 1e397db2843bffe4da034a50d2da86d5
  * Notes         : MD5 = file content without header/footer
  * Encoding      : UTF-8
  * Author        : Viktor Glebov / V01G04A81
- * Copyright     : © 2025 Viktor Glebov
+ * Copyright     : © 2025-2026 Viktor Glebov
  * ========================[ BEGIN FILE CONTENT ]====================================== */
 #include "vhtimerstamp.hpp"
 
@@ -141,9 +141,9 @@ uint32_t VHTimerStamp::result_ms() {
 /* ========================[  END FILE CONTENT  ]========================
  * Library          : vhlibtimerstamp
  * File             : src/vhtimerstamp.cpp
- * Revision         : 0.0.1
+ * Revision         : 0.0.2
  * Content size     : 2696
- * Date / Time      : 17-10-2026 11:22:41
+ * Date / Time      : 17-10-2026 16:02:02
  * MD5              : 1e397db2843bffe4da034a50d2da86d5
- * Copyright        : © 2025 Viktor Glebov
+ * Copyright        : © 2025-2026 Viktor Glebov / V01G04A81
  * ====================================================================== */
