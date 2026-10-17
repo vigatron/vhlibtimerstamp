@@ -1,9 +1,9 @@
 /* ========================[  END FILE CONTENT  ]========================
  * Library          : vhlibtimerstamp
  * File             : ${fname}
- * Revision         : 0.0.1
+ * Revision         : 0.0.2
  * Content size     : ${cntsz}
  * Date / Time      : ${fdatetime}
  * MD5              : ${fmd5}
- * Copyright        : © 2025 Viktor Glebov
+ * Copyright        : © 2025-2026 Viktor Glebov / V01G04A81
  * ====================================================================== */

@@ -2,18 +2,18 @@
  * Library       : vhlibtimerstamp
  * Description   : Lightweight C++ timer library for high-precision
  *                 microsecond-level benchmarking on PC, ESP32, and STM32 (DWT).
- * Revision      : 0.0.1
+ * Revision      : 0.0.2
  * Source        : https://github.com/vigatron/vhlibtimerstamp
  * Disclaimer    : Provided "AS IS", without warranty.
  * License       : MIT
  * File          : src/vhtimerstamp.hpp
- * Content size  : 770
- * Date / Time   : 17-10-2026 11:22:41
- * MD5           : 98442234afe2e7079918a81c0883df6c
+ * Content size  : 1013
+ * Date / Time   : 17-10-2026 16:02:02
+ * MD5           : 4f454b62ed93028fad9767a2ff668e6b
  * Notes         : MD5 = file content without header/footer
  * Encoding      : UTF-8
  * Author        : Viktor Glebov / V01G04A81
- * Copyright     : © 2025 Viktor Glebov
+ * Copyright     : © 2025-2026 Viktor Glebov
  * ========================[ BEGIN FILE CONTENT ]====================================== */
 #pragma once
 
@@ -24,7 +24,16 @@
 #elif defined(VHPLATFORM_STM32)
 
 #include <cstdint>
-#include "main.h"
+
+#if defined(STM32F407xx)
+#include "stm32f4xx_hal.h"
+#elif defined(STM32F746xx)
+#include "stm32f7xx_hal.h"
+#elif defined(STM32H750xx)
+#include "stm32h7xx_hal.h"
+#else 
+#error "vhlibtimerstamp: Unknown Platform: STM32F407xx / STM32F746xx / STM32H750xx ?"
+#endif
 
 #elif defined(VHPLATFORM_ESP32)
 
@@ -74,9 +83,9 @@ private:
 /* ========================[  END FILE CONTENT  ]========================
  * Library          : vhlibtimerstamp
  * File             : src/vhtimerstamp.hpp
- * Revision         : 0.0.1
- * Content size     : 770
- * Date / Time      : 17-10-2026 11:22:41
- * MD5              : 98442234afe2e7079918a81c0883df6c
- * Copyright        : © 2025 Viktor Glebov
+ * Revision         : 0.0.2
+ * Content size     : 1013
+ * Date / Time      : 17-10-2026 16:02:02
+ * MD5              : 4f454b62ed93028fad9767a2ff668e6b
+ * Copyright        : © 2025-2026 Viktor Glebov / V01G04A81
  * ====================================================================== */
